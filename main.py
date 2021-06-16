@@ -1,7 +1,11 @@
-value = 5
-if value == 4:
-    print('Hello', value)
-elif value >= 4:
-    print('Hello', value)
+value = 13
+if not value % 2:
+    print(value, '= 2')
+elif not value % 3:
+    print(value, '= 3')
 else:
-    print('None')
+    print('Делится на 2 и на 3')
+
+# value = 'abc'
+# new_value = bool(value)
+# print(new_value)
