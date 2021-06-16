@@ -9,4 +9,6 @@ else:
 # value = 'abc'
 # new_value = bool(value)
 # print(new_value)
-123
+
+
+ё1241234
