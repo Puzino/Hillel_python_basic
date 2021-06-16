@@ -12,7 +12,17 @@
 
 
 # Тернарный оператор
-my_int = 100
-my_int = my_int // 2 if my_int > 10 else -1
+# my_int = 100
+# my_int = my_int // 2 if my_int > 10 else -1 # Тернарный оператор
+# print(my_int)
 
-print(my_int)
+# number = 12346545674798798713434
+# print(len(str(number))) #Считает количество чифр, не работает со строкой = нужно перевести цифры в строку
+
+my_str = 'qwerty'
+# index = 1
+# print(my_str[index])
+
+#Срез(Срезает вписанное количество символов которое пишется через двоеточие)
+new_str = my_str[2:-1] #от(включая) до (невключая)
+print(new_str)
