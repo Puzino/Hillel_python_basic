@@ -3,7 +3,7 @@
 #     блок если ДА
 # else:
 #     блок если НЕТ
-
+#
 my_bool = False
 value = str(my_bool)
 if value:
@@ -30,7 +30,7 @@ elif not value % 2:
 elif not value % 3:
     print("Число делится только на 3")
 
-my_str = "qwety"
+my_str = "qwerty"
 my_int = 9
 if 'r' in my_str:
     new_str = my_str * 2
@@ -40,4 +40,4 @@ else:
 new_str = my_str * 2 if 'r' in my_str else my_str
 
 new_int = my_int // 2 if my_int > 10 else -1
-print(new_int)
+print(new_str)
