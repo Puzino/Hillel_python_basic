@@ -35,5 +35,6 @@
 my_str = 'qwer'
 s = len(my_str)
 n = 5
-ack_str = my_str[::-1]
-new_str = ack_str if s < n else my_str
+back_str = my_str[::-1]
+new_str = my_str + back_str if s < n else my_str
+print(new_str)
