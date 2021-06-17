@@ -15,14 +15,17 @@ print(new_value)
 value = 100
 new_value = True if value < 100 else False
 print(new_value)
+
 # 4) У вас есть переменная my_str, тип - str. Заменить в my_str все маленькие буквы на большие.
 my_str = 'qwerty'
 my_str = my_str.upper()
 print(my_str)
+
 # 5) У вас есть переменная my_str, тип - str. Заменить в my_str все большие буквы на маленькие.
 my_str = 'QWERTY'
 my_str = my_str.lower()
 print(my_str)
+
 # 6) У вас есть переменная my_str, тип - str. Если ее длинна меньше 5, то допишите в конец строки себя же.
 # Пример: было - "qwer", стало - "qwerqwer". Если длинна не меньше 5, то оставить строку как есть.
 my_str = 'qwer'
@@ -30,6 +33,7 @@ s = len(my_str)
 n = 5
 new_str = my_str * 2 if s < n else my_str
 print(new_str)
+
 # 7) У вас есть переменная my_str, тип - str. Если ее длинна меньше 5, то допишите в конец строки перевернутую себя же.
 # Пример: было - "qwer", стало - "qwerrewq". Если длинна не меньше 5, то оставить строку как есть.
 my_str = 'qwer'
