@@ -56,6 +56,7 @@ my_str = []
 for symb1 in my_string:
     for symb2 in my_string:
         my_str.append(symb1 + symb2)
+my_str = tuple(my_str) # Приведение типов
 print(my_str)
 
 # Второй вариант - Печатает на отдельной строке
