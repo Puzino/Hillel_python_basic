@@ -63,7 +63,7 @@
 #     my_list.append(symbol)
 # print(my_list)
 
-# my_number = 123456789
+my_number = 1523478906
 # digit_count = len(str(my_number))
 # print(digit_count)
 
@@ -81,4 +81,19 @@
 # new_number_str = number_str[::-1]
 # new_number = int(new_number_str)
 # print(new_number)
+
+
+#Сложить для себя в одну строку
+number_str = str(my_number)
+sorted_number_symbols_list = sorted(number_str, reverse=True)
+new_number_str = ''.join(sorted_number_symbols_list)
+new_number = int(new_number_str)
+print(new_number)
+
+# my_list = [1, 2, 3, 4, 5, -6, 7, 8]
+# my_str = 'qwertyuiopasdfghjklzxcvbnm'
+# sorted_list = sorted(my_str)
+# print(sorted_list)
+
+
 
