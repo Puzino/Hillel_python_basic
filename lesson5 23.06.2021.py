@@ -14,16 +14,16 @@
 #     except ValueError:
 #         text_message = 'Введи число от 1 до 10: '
 
-    # value = input("Введи число от 1 до 10: ")
-    # if value == str(tmp_value):
-    #     print("Ура, угадал!")
-    #     break
-    # elif int(value) <= int(tmp_value):
-    #     value = input("Попробуй число больше: ")
-    #     print(f'Попробуй число больше чем {value}')
-    # elif int(value) >= int(tmp_value):
-    #     value = input("Попробуй число меньше: ")
-    #     print(f'Попробуй число меньше чем {value}')
+# value = input("Введи число от 1 до 10: ")
+# if value == str(tmp_value):
+#     print("Ура, угадал!")
+#     break
+# elif int(value) <= int(tmp_value):
+#     value = input("Попробуй число больше: ")
+#     print(f'Попробуй число больше чем {value}')
+# elif int(value) >= int(tmp_value):
+#     value = input("Попробуй число меньше: ")
+#     print(f'Попробуй число меньше чем {value}')
 
 # my_str = 'blablacar'
 # my_symbol = 'bla'
@@ -40,7 +40,45 @@
 # res_len = len(symbols_heap)
 # print(res_len)
 
-my_str = 'qwerty'
-my_list = []
-for index in range(len(my_list)):
-    if not index % 2:
+# my_str = 'qwerty'
+# my_list = []
+# for index in range(len(my_str)):
+#     if not index % 2:
+#         symbols = my_str[index]
+#         my_list.append(symbols)
+#
+# for index, symbol in enumerate(my_str):
+#     if not index % 2:
+#         my_list.append(symbols)
+#
+# print(my_list)
+
+
+# my_str = 'qwerty'
+# my_list = []
+# str_index = [0, 1, 2, 3, 3, 4, 5, 0, 4, 4, 1, 3, 3, 4]
+#
+# for index in str_index:
+#     symbol = my_str[index]
+#     my_list.append(symbol)
+# print(my_list)
+
+# my_number = 123456789
+# digit_count = len(str(my_number))
+# print(digit_count)
+
+# ord("") #Проверяет номер числа
+# chr() #Проверка числа
+#
+# number_str = str(my_number)
+# max_symbol = max(number_str)
+# print(max_symbol)
+#
+# test_list = [1, 2, 3, 4]
+# print(max(test_list))
+
+# number_str = str(my_number)
+# new_number_str = number_str[::-1]
+# new_number = int(new_number_str)
+# print(new_number)
+
