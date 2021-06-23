@@ -25,8 +25,22 @@
     #     value = input("Попробуй число меньше: ")
     #     print(f'Попробуй число меньше чем {value}')
 
-my_str = 'blablacarblablacarblablacarblablacar'
-my_symbol = 'bla'
-my_symbol_count = my_str.count(my_symbol)
-for index in range(my_symbol_count):
-    print(my_symbol)
+# my_str = 'blablacar'
+# my_symbol = 'bla'
+# my_symbol_count = my_str.count(my_symbol)
+# for index in range(my_symbol_count):
+#     print(my_symbol)
+
+# my_str = 'bla BLA car'
+# my_str = my_str.lower()
+# symbols_heap = []
+# for symbol in my_str:
+#     if symbol not in symbols_heap:
+#         symbols_heap.append(symbol)
+# res_len = len(symbols_heap)
+# print(res_len)
+
+my_str = 'qwerty'
+my_list = []
+for index in range(len(my_list)):
+    if not index % 2:
