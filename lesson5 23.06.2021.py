@@ -53,7 +53,10 @@
 #
 # print(my_list)
 
-
+my_number = 10101010101010101010101010101000
+str_my_number = str(my_number)
+find_my_number = str_my_number.find('0')
+print(find_my_number
 # my_str = 'qwerty'
 # my_list = []
 # str_index = [0, 1, 2, 3, 3, 4, 5, 0, 4, 4, 1, 3, 3, 4]
