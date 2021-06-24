@@ -64,8 +64,8 @@
 # print(my_list)
 
 my_number = 1523478906
-# digit_count = len(str(my_number))
-# print(digit_count)
+digit_count = len(str(my_number))
+print(digit_count)
 
 # ord("") #Проверяет номер числа
 # chr() #Проверка числа
