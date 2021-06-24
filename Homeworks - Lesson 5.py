@@ -40,4 +40,3 @@
 # my_result = []
 # my_result.append(my_list_1 + my_list_1[1::-1])
 # print(my_result)
-123sadasd
