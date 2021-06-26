@@ -10,29 +10,18 @@
 # print(len(str_my_number) - len(str_my_number.rstrip('0')))
 
 
-# НЕ СДЕЛАНЫ!!!!!!!!!
 # 3. Даны списки my_list_1 и my_list_2.
 # Создать список my_result в который вначале поместить
 # элементы на четных местах из my_list_1, а потом все элементы на нечетных местах из my_list_2.
-
-# my_list_1 = [1, 0, 1, 0, 1, 0, 1,]
-# my_list_2 = [0, 2, 0, 2, 0, 2, 0,]
-# my_result = []
-# for number_1 in my_list_1[::2]:
-#     my_result.append(number_1)
-#     for number_2 in my_list_2[::1]:
-#         my_result.append(number_2)
-# for number_1 in my_list_1:
-#     # if not number_1 % 2:
-#     #     my_result.append(number_1)
-#         for number_2 in my_list_2:
-#             if not number_2 % 2:
-#                 my_result.append(number_2)
-# for index_1 in my_list_1[::2]:
-#     my_result.append(index_1)
-# for index_2 in my_list_2[]:
-#     my_result.append(index_2 )
-# print(my_result)
+my_list_1 = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+my_list_2 = [0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0]
+my_result = []
+for index_1 in my_list_1[::2]:
+    my_result.append(index_1)
+for index_2, symbol in enumerate(my_list_2):
+    if index_2 % 2:
+        my_result.append(symbol)
+print(my_result)
 
 # 4. Дан список my_list. СОЗДАТЬ НОВЫЙ список new_list у которого первый элемент из my_list
 # стоит на последнем месте. Если my_list [1,2,3,4], то new_list [2,3,4,1]
