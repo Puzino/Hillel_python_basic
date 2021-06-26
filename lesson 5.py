@@ -1,9 +1,9 @@
-my_list = [1, 2, 3]
-new_list = [my_list.copy(), my_list.copy(), my_list.copy()]
-print(new_list)
-new_list[0].append(4)
-print(my_list)
-print(new_list)
+# my_list = [1, 2, 3]
+# new_list = [my_list.copy(), my_list.copy(), my_list.copy()]
+# print(new_list)
+# new_list[0].append(4)
+# print(my_list)
+# print(new_list)
 
 ## ДЗ*  давать подсказки типа: "Попробуй больше", "Попробуй меньше"
 
@@ -71,21 +71,21 @@ print(res_len)
 
 
 """
-4)
-Дана строка my_str и пустой список my_list.
-Заполнить my_list символами из my_str, 
-которые стоят на четных местах в строке (считаем с 0)
-"""
-my_str = "qwerty"
-my_list = []
-# for index in range(len(my_str)):
+# 4)
+# Дана строка my_str и пустой список my_list.
+# Заполнить my_list символами из my_str, 
+# которые стоят на четных местах в строке (считаем с 0)
+# """
+# my_str = "qwerty"
+# my_list = []
+# # for index in range(len(my_str)):
+# #     if not index % 2:
+# #         symbol = my_str[index]
+# #         my_list.append(symbol)
+# for index, symbol in enumerate(my_str):
 #     if not index % 2:
-#         symbol = my_str[index]
 #         my_list.append(symbol)
-for index, symbol in enumerate(my_str):
-    if not index % 2:
-        my_list.append(symbol)
-print(my_list)
+# print(my_list)
 
 """
 5)
