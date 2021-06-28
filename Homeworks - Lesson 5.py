@@ -5,7 +5,6 @@
 # str_my_number = str(my_number)
 # count_my_number = str_my_number.count('0')
 # print(count_my_number)
-import just as just
 
 """
 2. Дано целое число (int). Определить сколько нулей в конце этого числа.
@@ -56,9 +55,14 @@ import just as just
 Для данного примера ответ - 133. (используйте split и проверку isdigit)
 """
 
-my_str = "43 больше чем 34 но меньше чем 56"
-
-print(my_str.split())
+# my_str = "43 больше чем 34 но меньше чем 56"
+# word_list = my_str.split()
+# num_list = []
+# for word in word_list:
+#     if word.isnumeric():
+#         num_list.append(int(word))
+# sum_num_list = sum(num_list)
+# print(sum_num_list)
 
 
 """
@@ -67,6 +71,8 @@ print(my_str.split())
 В переменную sub_str поместить НАИБОЛЬШУЮ часть строки между этими символами.
 my_str = "My long string", l_limit = "o", r_limit = "g" -> sub_str = "ng strin".
 """
+my_str = "My long string"
+sub_str =
 
 """
 8. Дана строка my_str. Разделите эту строку на пары из двух символов и поместите эти пары в список.
