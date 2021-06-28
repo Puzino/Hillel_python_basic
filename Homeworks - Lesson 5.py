@@ -71,8 +71,10 @@
 В переменную sub_str поместить НАИБОЛЬШУЮ часть строки между этими символами.
 my_str = "My long string", l_limit = "o", r_limit = "g" -> sub_str = "ng strin".
 """
-my_str = "My long string"
-sub_str =
+my_str = 'My long string'
+sub_str = ''
+l_limit = 'o'
+r_limit = 'g'
 
 """
 8. Дана строка my_str. Разделите эту строку на пары из двух символов и поместите эти пары в список.
