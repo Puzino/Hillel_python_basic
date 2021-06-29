@@ -76,10 +76,8 @@ my_str = "My long string", l_limit = "o", r_limit = "g" -> sub_str = "ng strin".
 # r_limit = 'g'
 # l_limit_find = my_str.find(l_limit)
 # r_rlimit_find = my_str.rfind(r_limit)
-# index = int(l_limit_find + 1)
-# l_limit_find = index
-# sub_str = my_str[l_limit_find:r_rlimit_find]
-# print(sub_str)
+# sub_str = my_str[l_limit_find + 1:r_rlimit_find]
+# prin t(sub_str)
 
 """
 8. Дана строка my_str. Разделите эту строку на пары из двух символов и поместите эти пары в список.
@@ -87,7 +85,16 @@ my_str = "My long string", l_limit = "o", r_limit = "g" -> sub_str = "ng strin".
 быть заменен подчеркиванием ('_'). Примеры: 'abcd' -> ['ab', 'cd'], 'abcde' -> ['ab', 'cd', e_']
 (используйте срезы длинны 2)
 """
-
+my_str = 'abcde'
+my_list = []
+split_my_list = my_str.split()
+# len_my_str = len(my_str)
+# for symbol in my_str:
+#     if len_my_str != 2:
+#         my_list.append(symbol[::2])
+#     else:
+#         break
+print(my_list)
 """
 9. Дан список чисел. Определите, сколько в этом списке элементов,
 которые больше суммы двух своих соседей (слева и справа), и НАПЕЧАТАЙТЕ КОЛИЧЕСТВО таких элементов.
