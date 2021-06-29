@@ -71,10 +71,15 @@
 В переменную sub_str поместить НАИБОЛЬШУЮ часть строки между этими символами.
 my_str = "My long string", l_limit = "o", r_limit = "g" -> sub_str = "ng strin".
 """
-my_str = 'My long string'
-sub_str = ''
-l_limit = 'o'
-r_limit = 'g'
+# my_str = 'My long string'
+# l_limit = 'o'
+# r_limit = 'g'
+# l_limit_find = my_str.find(l_limit)
+# r_rlimit_find = my_str.rfind(r_limit)
+# index = int(l_limit_find + 1)
+# l_limit_find = index
+# sub_str = my_str[l_limit_find:r_rlimit_find]
+# print(sub_str)
 
 """
 8. Дана строка my_str. Разделите эту строку на пары из двух символов и поместите эти пары в список.
