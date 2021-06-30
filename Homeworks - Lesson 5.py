@@ -19,15 +19,13 @@
 Создать список my_result в который вначале поместить
 элементы на четных местах из my_list_1, а потом все элементы на нечетных местах из my_list_2.
 """
-# my_list_1 = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
-# my_list_2 = [0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 0]
-# my_result = []
-# for index_1 in my_list_1[::2]:
-#     my_result.append(index_1)
-# for index_2, symbol in enumerate(my_list_2):
-#     if index_2 % 2:
-#         my_result.append(symbol)
-# print(my_result)
+my_list_1 = [1, 2, 3, 4, 5]
+my_list_2 = [10, 20, 30, 40, 50]
+my_result = []
+for index in range(len(my_list_1)):
+    my_result.append(my_list_1[index])
+    my_result.append(my_list_2[index])
+print(my_result)
 
 """
 4. Дан список my_list. СОЗДАТЬ НОВЫЙ список new_list у которого первый элемент из my_list
@@ -85,14 +83,15 @@ my_str = "My long string", l_limit = "o", r_limit = "g" -> sub_str = "ng strin".
 быть заменен подчеркиванием ('_'). Примеры: 'abcd' -> ['ab', 'cd'], 'abcde' -> ['ab', 'cd', e_']
 (используйте срезы длинны 2)
 """
-my_str = 'abcde'
-my_list = []
-len_my_str = len(my_str)
-for symbol in my_str[:2]:
-    append_my_list = my_list.append(my_str)
-    if len_my_str % 2 != 0:
-        my_list.append('_'[:2])
-print(my_list)
+# my_str = 'abcde'
+# my_list = []
+# len_my_str = len(my_str)
+# append_my_list = my_list.append(my_str)
+# if len_my_str % 2 != 0:
+#     append_my_list_2 = my_list.append('_')
+#     print(append_my_list + append_my_list_2)
+# else:
+#     print(my_list)
 
 """
 9. Дан список чисел. Определите, сколько в этом списке элементов,
