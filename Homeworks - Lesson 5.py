@@ -87,14 +87,13 @@ my_str = "My long string", l_limit = "o", r_limit = "g" -> sub_str = "ng strin".
 """
 my_str = 'abcde'
 my_list = []
-split_my_list = my_str.split()
-# len_my_str = len(my_str)
-# for symbol in my_str:
-#     if len_my_str != 2:
-#         my_list.append(symbol[::2])
-#     else:
-#         break
+len_my_str = len(my_str)
+for symbol in my_str[:2]:
+    append_my_list = my_list.append(my_str)
+    if len_my_str % 2 != 0:
+        my_list.append('_'[:2])
 print(my_list)
+
 """
 9. Дан список чисел. Определите, сколько в этом списке элементов,
 которые больше суммы двух своих соседей (слева и справа), и НАПЕЧАТАЙТЕ КОЛИЧЕСТВО таких элементов.
