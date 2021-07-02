@@ -34,7 +34,7 @@
 # print(id(my_list))
 # my_list.append(6)
 # print(id(my_list))
-
+#
 # my_list = [1, 2, 3]
 # result = []
 # print(id(result))
@@ -53,12 +53,12 @@
 #     folder = f'/tmp/{digit}'
 #     folders.append(folder)
 # print(folders)
-
+#
 # folders = [f'/tmp/{digit}'
-
+#
 # symbol = [ord(symbol) for symbol in 'eyunioa']
 # print(symbol)
-
+#
 # alphabet = [chr(ord_index) for ord_index in range(ord('a'), ord('z') + 1)]
 # alphabet = ''.join(alphabet)
 # print(alphabet)
@@ -114,11 +114,11 @@
 # triangle = [[1, 1], [2, 3], [4, -2]]
 # print(triangle[1][1])
 
-key = {1,2,'qwe'}
-test_dict = {1: 'qwerty',
-             '11': 12,
-             key: 'test'}
-print(test_dict)
+# key = {1,2,'qwe'}
+# test_dict = {1: 'qwerty',
+#              '11': 12,
+#              key: 'test'}
+# print(test_dict)
 
 # triangle = {'A': {'x': 1, 'y': 1},
 #             'B': {'x': 2, 'y': 3},
