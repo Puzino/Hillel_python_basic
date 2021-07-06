@@ -28,29 +28,30 @@
 которые встречаются в строке ТОЛЬКО ОДИН раз.
 """
 
+# my_str = '122233334555567889'
+# my_list = []
+# for symbol in set(my_str):
+#     my_list.append(symbol)
+# print(my_list)
+
 """
 6. Даны две строки. Создать список в который поместить те символы,
 которые есть в обеих строках хотя бы раз.
 """
 
+my_str_1 = '123'
+my_str_2 = '123456'
+set_my_str_1 = set(my_str_1)
+set_my_str_2 = set(my_str_2)
+my_list = []
+intersection = set_my_str_1.intersection(set_my_str_2)
+extend_my_list = my_list.extend(intersection)
+print(my_list)
+
 """
 7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
 но в каждой ТОЛЬКО ПО ОДНОМУ разу.
 """
-
-my_str_1 = '123456789'
-my_str_2 = '987654321'
-my_list = []
-
-
-
-
-
-
-
-
-
-
 
 
 
