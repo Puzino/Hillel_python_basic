@@ -47,8 +47,8 @@ print(new_list)
 [1,2,3,4] -> [2,3,4,1]. Пересоздавать список нельзя! (используйте метод pop)
 """
 my_list = [1, 2, 3, 4]
-extend_my_list = my_list.extend([my_list[0]][::-1])
-pop_my_list = my_list.pop(0)
+first_element=my_list.pop(0)
+my_list.append(first_element)
 print(my_list)
 
 """
