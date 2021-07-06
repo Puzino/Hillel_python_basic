@@ -114,11 +114,11 @@
 # triangle = [[1, 1], [2, 3], [4, -2]]
 # print(triangle[1][1])
 
-key = {1,2,'qwe'}
-test_dict = {1: 'qwerty',
-             '11': 12,
-             key: 'test'}
-print(test_dict)
+# key = {1,2,'qwe'}
+# test_dict = {1: 'qwerty',
+#              '11': 12,
+#              key: 'test'}
+# print(test_dict)
 
 # triangle = {'A': {'x': 1, 'y': 1},
 #             'B': {'x': 2, 'y': 3},
