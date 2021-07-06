@@ -27,7 +27,7 @@
 5. Дана строка my_str. Создать список в который поместить те символы из my_str,
 которые встречаются в строке ТОЛЬКО ОДИН раз.
 """
-
+https://all-python.ru/osnovy/mnozhestva.html
 my_str = '122233334555567889'
 my_list = []
 for symbol in set(my_str):
