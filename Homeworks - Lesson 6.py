@@ -23,22 +23,21 @@
 Создать новый список в который поместить только строки из my_list.
 """
 
-"""
-5. Дана строка my_str. Создать список в который поместить те символы из my_str,
-которые встречаются в строке ТОЛЬКО ОДИН раз.
-"""
-https://all-python.ru/osnovy/mnozhestva.html
-my_str = '122233334555567889'
-my_list = []
-for symbol in set(my_str):
-    my_str.difference(my_str)
-    my_list.append(symbol)
-print(my_list)
+
 
 """
 7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
 но в каждой ТОЛЬКО ПО ОДНОМУ разу.
 """
+my_str_1 = '11233334555567889'
+my_str_2 = '11233334555567889'
+my_set_1 = set(my_str_1)
+my_set_2 = set(my_str_2)
+my_list = []
+intersection = my_set_1.intersection(my_set_2)
+for i in intersection:
+        if intersection.count(i) == 1: my_list.append(i)
+print(my_list)
 
 
 
@@ -48,8 +47,15 @@ print(my_list)
 
 
 
-
-
+"""
+5. Дана строка my_str. Создать список в который поместить те символы из my_str,
+которые встречаются в строке ТОЛЬКО ОДИН раз.
+"""
+# my_str = '122233334555567889'
+# my_list = []
+# for number in my_str:
+#         if my_str.count(number) == 1: my_list.append(number)
+# print(set(my_list))
 
 """
 6. Даны две строки. Создать список в который поместить те символы,

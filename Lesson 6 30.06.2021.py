@@ -95,16 +95,16 @@ print(new_set)
 # for symbol in set(my_str):
 #     print(symbol, my_str.count(symbol))
 
-# my_str_1 = 'qwerty'
-# my_str_2 = 'qweasd'
-# my_set_1 = set(my_str_1)
-# my_set_2 = set(my_str_2)
-# intersection = my_set_1.intersection(my_set_2)
-# union = my_set_1.union(my_set_2)
-# difference = my_set_1.difference(my_set_2)
-# print(intersection)
-# print(union)
-# print(difference)
+my_str_1 = 'qwerty'
+my_str_2 = 'qweasd'
+my_set_1 = set(my_str_1)
+my_set_2 = set(my_str_2)
+intersection = my_set_1.intersection(my_set_2)
+union = my_set_1.union(my_set_2)
+difference = my_set_1.difference(my_set_2)
+print(intersection)
+print(union)
+print(difference)
 
 """
 Словарь (dict) - не гарантирует порядок, все ключи уникальные ( словарь = {"ключ": [1, 2],} )
