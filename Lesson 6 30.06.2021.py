@@ -66,15 +66,15 @@
 """
 Множество - set - не сохраняет порядок, все элементы уникальные 
 """
-# my_list = [1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3]
-# # my_list_unique = list(set(my_list))
-# my_set = set(my_list)
-# print(my_set)
-# my_list_unique = list(my_set)
-# print(my_list_unique)
-#
-# new_set = {1, 2, 3, 4, 5, 6, 6, 66, 7, 8, 8, 8, 54, 54}
-# print(new_set)
+my_list = [1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3]
+# my_list_unique = list(set(my_list))
+my_set = set(my_list)
+print(my_set)
+my_list_unique = list(my_set)
+print(my_list_unique)
+
+new_set = {1, 2, 3, 4, 5, 6, 6, 66, 7, 8, 8, 8, 54, 54}
+print(new_set)
 
 """
 3) У вас есть переменная my_str, тип - str. Напечатать ЧИСЛО сколько 
@@ -95,16 +95,16 @@
 # for symbol in set(my_str):
 #     print(symbol, my_str.count(symbol))
 
-# my_str_1 = 'qwerty'
-# my_str_2 = 'qweasd'
-# my_set_1 = set(my_str_1)
-# my_set_2 = set(my_str_2)
-# intersection = my_set_1.intersection(my_set_2)
-# union = my_set_1.union(my_set_2)
-# difference = my_set_1.difference(my_set_2)
-# print(intersection)
-# print(union)
-# print(difference)
+my_str_1 = 'qwerty'
+my_str_2 = 'qweasd'
+my_set_1 = set(my_str_1)
+my_set_2 = set(my_str_2)
+intersection = my_set_1.intersection(my_set_2)
+union = my_set_1.union(my_set_2)
+difference = my_set_1.difference(my_set_2)
+print(intersection)
+print(union)
+print(difference)
 
 """
 Словарь (dict) - не гарантирует порядок, все ключи уникальные ( словарь = {"ключ": [1, 2],} )

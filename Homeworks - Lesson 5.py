@@ -19,17 +19,16 @@ print(len(str_my_number) - len(str_my_number.rstrip('0')))
 Создать список my_result в который вначале поместить
 элементы на четных местах из my_list_1, а потом все элементы на нечетных местах из my_list_2.
 """
-my_list_1 = [1, 2, 3, 4, 5]
-my_list_2 = [10, 20, 30, 40, 50]
-min_len_list = min(len(my_list_1), len(my_list_2))
-my_result = []
-for index in range(min_len_list):
-    my_result.append(my_list_1[index])
-    my_result.append(my_list_2[index])
-last_values_list_1 = my_list_1[min_len_list:]
-last_values_list_2 = my_list_2[min_len_list:]
-my_result = my_result + last_values_list_1 + last_values_list_2
-print(my_result)
+my_list_1 = ['12', 'b', 2, 'dd', ['qwe', 121]]
+my_list_2 = ['qq', 10, 'x', 'kl', 45, 12.23]
+result = []
+for index, symbol in enumerate(my_list_1):
+    if not index % 2:
+        result.append(symbol)
+for index, symbol in enumerate(my_list_2):
+    if index % 2:
+        result.append(symbol)
+print(result)
 
 """
 4. Дан список my_list. СОЗДАТЬ НОВЫЙ список new_list у которого первый элемент из my_list
@@ -47,8 +46,8 @@ print(new_list)
 [1,2,3,4] -> [2,3,4,1]. Пересоздавать список нельзя! (используйте метод pop)
 """
 my_list = [1, 2, 3, 4]
-extend_my_list = my_list.extend([my_list[0]][::-1])
-pop_my_list = my_list.pop(0)
+first_element=my_list.pop(0)
+my_list.append(first_element)
 print(my_list)
 
 """
@@ -102,7 +101,8 @@ print(my_list)
 Крайние элементы списка никогда не учитываются, поскольку у них недостаточно соседей.
 Для списка [2,4,1,5,3,9,0,7] ответом будет 3 потому что 4 > 2+1, 5 > 1+3, 9>3+0.
 """
-my_list = [2, 4, 1, 5, 3, 9, 0, 7]
+print('9)-----------------------------------------------')
+my_list = [2, 4, 1, 5, 3, 9, 0, 7, 21, 12521, 12, 21, 4, 15]
 new_list = []
 final_list = []
 for index in range(len(my_list)):
