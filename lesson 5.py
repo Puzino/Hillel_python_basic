@@ -7,21 +7,21 @@
 
 ## ДЗ*  давать подсказки типа: "Попробуй больше", "Попробуй меньше"
 
-tmp_value = 5
-go_game = True
-text_message = "Введи число от 1 до 10"
-while go_game:
-    try:
-        value = int(input(text_message))
-        if tmp_value > value:
-            text_message = "Попробуй больше"
-        elif tmp_value < value:
-            text_message = "Попробуй меньше"
-        else:
-            go_game = False
-            print("Ура, угадал!")
-    except ValueError:
-        text_message = "Введи число от 1 до 10"
+# tmp_value = 5
+# go_game = True
+# text_message = "Введи число от 1 до 10"
+# while go_game:
+#     try:
+#         value = int(input(text_message))
+#         if tmp_value > value:
+#             text_message = "Попробуй больше"
+#         elif tmp_value < value:
+#             text_message = "Попробуй меньше"
+#         else:
+#             go_game = False
+#             print("Ура, угадал!")
+#     except ValueError:
+#         text_message = "Введи число от 1 до 10"
 
 """
 1) У вас есть переменная my_str, тип - str. И переменная my_symbol, тип - str.

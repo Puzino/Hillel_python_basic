@@ -16,12 +16,28 @@
 3. Дан список строк my_list. Создать новый список в который поместить
 элементы из my_list в которых есть символ - буква "a" на любом месте.
 """
+my_list = ['All', 'Big', 'World', 'Attention']
+my_symbol = "a"
+my_new_list = []
+for word in my_list:
+    if my_list.count(my_symbol): my_new_list.append()
+print(my_new_list)
+
 
 """
 4. Дан список my_list в котором могут быть как строки (type str) так и целые числа (type int).
 Например [1, 2, 3, "11", "22", 33]
 Создать новый список в который поместить только строки из my_list.
 """
+
+# my_list = [1, 2, 3, "11", "22", 33]
+# my_new_list = []
+# for word in my_list:
+#     if my_list.count(word): my_new_list.append(word)
+# print(my_new_list)
+
+
+
 
 
 
@@ -30,22 +46,15 @@
 7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
 но в каждой ТОЛЬКО ПО ОДНОМУ разу.
 """
-my_str_1 = '11233334555567889'
-my_str_2 = '11233334555567889'
-my_set_1 = set(my_str_1)
-my_set_2 = set(my_str_2)
-my_list = []
-intersection = my_set_1.intersection(my_set_2)
-for i in intersection:
-        if intersection.count(i) == 1: my_list.append(i)
-print(my_list)
-
-
-
-
-
-
-
+# my_str_1 = '1233334555567889'
+# my_str_2 = '1233334555567889'
+# my_set_1 = set(my_str_1)
+# my_set_2 = set(my_str_2)
+# my_list = []
+# union = my_set_1.union(my_set_2)
+# for number in union:
+#     if my_str_1.count(number) == 1 and my_str_2.count(number) == 1: my_list.append(number)
+# print(my_list)
 
 
 """
@@ -53,10 +62,11 @@ print(my_list)
 которые встречаются в строке ТОЛЬКО ОДИН раз.
 """
 # my_str = '122233334555567889'
+# my_set_str = set(my_str)
 # my_list = []
-# for number in my_str:
+# for number in my_set_str:
 #         if my_str.count(number) == 1: my_list.append(number)
-# print(set(my_list))
+# print(my_list)
 
 """
 6. Даны две строки. Создать список в который поместить те символы,
