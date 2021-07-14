@@ -58,7 +58,7 @@ print(folders)
 folders = [f"/tpm/{digit}" for digit in range(1, 21) if not digit % 3]
 print(folders)
 
-symbols = [ord(symbol) for symbol in 'eyuioa']
+symbols = [ord(symbol) for symbol in 'eyuioaи']
 print(symbols)
 
 alphabet = [chr(ord_index) for ord_index in range(ord("a"), ord("z") + 1)]
