@@ -20,7 +20,9 @@ print(result)
 элементы из my_list у которых первый символ - буква "a".
 """
 
-
+my_list = ['add', 'all', 'good', 'defence']
+new_list = [symbol for symbol in my_list if symbol[0].find('a') >= 0]
+print(new_list)
 
 """
 3. Дан список строк my_list. Создать новый список в который поместить
