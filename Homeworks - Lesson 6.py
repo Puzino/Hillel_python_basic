@@ -12,50 +12,34 @@
 элементы из my_list у которых первый символ - буква "a".
 """
 
+
+
+
+
 """
 3. Дан список строк my_list. Создать новый список в который поместить
 элементы из my_list в которых есть символ - буква "a" на любом месте.
 """
-my_list = ['All', 'Big', 'World', 'Attention']
-my_symbol = "a"
-my_new_list = []
-for word in my_list:
-    if my_list.count(my_symbol): my_new_list.append()
-print(my_new_list)
-
+# my_list = ['asda', 'qwe', "asda", 'zxc', 'gfa', 'alll']
+# result = []
+# for index, value in enumerate(my_list):
+#     if 'a' in value:
+#         result.append(value)
+#
+# print(result)
 
 """
 4. Дан список my_list в котором могут быть как строки (type str) так и целые числа (type int).
 Например [1, 2, 3, "11", "22", 33]
 Создать новый список в который поместить только строки из my_list.
 """
-
 # my_list = [1, 2, 3, "11", "22", 33]
-# my_new_list = []
-# for word in my_list:
-#     if my_list.count(word): my_new_list.append(word)
-# print(my_new_list)
-
-
-
-
-
-
-
-"""
-7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
-но в каждой ТОЛЬКО ПО ОДНОМУ разу.
-"""
-# my_str_1 = '1233334555567889'
-# my_str_2 = '1233334555567889'
-# my_set_1 = set(my_str_1)
-# my_set_2 = set(my_str_2)
-# my_list = []
-# union = my_set_1.union(my_set_2)
-# for number in union:
-#     if my_str_1.count(number) == 1 and my_str_2.count(number) == 1: my_list.append(number)
-# print(my_list)
-
+# result = []
+# for index, symbol in enumerate(my_list):
+#     if isinstance(symbol, str):
+#         result.append(symbol)
+#
+# print(result)
 
 """
 5. Дана строка my_str. Создать список в который поместить те символы из my_str,
@@ -80,6 +64,21 @@ print(my_new_list)
 # intersection = set_my_str_1.intersection(set_my_str_2)
 # extend_my_list = my_list.extend(intersection)
 # print(my_list)
+
+"""
+7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
+но в каждой ТОЛЬКО ПО ОДНОМУ разу.
+"""
+# my_str_1 = '1233334555567889'
+# my_str_2 = '1233334555567889'
+# my_set_1 = set(my_str_1)
+# my_set_2 = set(my_str_2)
+# my_list = []
+# union = my_set_1.union(my_set_2)
+# for number in union:
+#     if my_str_1.count(number) == 1 and my_str_2.count(number) == 1: my_list.append(number)
+# print(my_list)
+
 """
 8. Описать с помощью словаря следующую структуру для конкретного человека (можно придумать):
 Фамилия
