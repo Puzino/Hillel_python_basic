@@ -10,8 +10,15 @@ def create_point(min_limit=MIN_LIMIT, max_limit=MAX_LIMIT):
     return point
 
 
-def create_triangle(points_name):
+def create_triangle(points_name: str) -> dict:
     return {key: create_point() for key in points_name}
+
+
+def print_triangles_list(triangles_list: list) -> None:
+    for triangle in triangles_list:
+        print('---------------------------------------')
+        print(triangle)
+        print('---------------------------------------')
 
 
 # triangle_ABC = create_triangle('ABC')
@@ -25,4 +32,4 @@ for name in names:
     triangle = create_triangle(name)
     triangle_list.append(triangle)
 
-print(triangle_list)
+print_triangles_list(triangle_list)
