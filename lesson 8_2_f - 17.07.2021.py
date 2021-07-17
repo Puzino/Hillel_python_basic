@@ -1,14 +1,14 @@
 import random
 
 
-def create_point():
-    point = {'x': random.randint(-10, 10),
-             'y': random.randint(-10, 10)}
+def create_point(min_limit, max_limit):
+    point = {'x': random.randint(min_limit, max_limit),
+             'y': random.randint(min_limit, max_limit)}
     return point
 
 
-def create_triangle(points_name):
-    return {key: create_point() for key in points_name}
+def create_triangle(points_name, min_limit, max_limit):
+    return {key: create_point(min_limit, max_limit) for key in points_name}
 
 
 # point_A = create_point()
@@ -21,8 +21,8 @@ def create_triangle(points_name):
 #                 'B': create_point(),
 #                 'C': create_point()}
 
-triangle_ABC = create_triangle('ABC')
-triangle_MNK = create_triangle('MNK')
+triangle_ABC = create_triangle('ABC', -10, 10)
+triangle_MNK = create_triangle('MNK', -10, 10)
 
 print(triangle_ABC)
 print(triangle_MNK)
