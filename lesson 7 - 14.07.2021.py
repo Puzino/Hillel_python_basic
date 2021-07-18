@@ -96,7 +96,7 @@ bread_price = []
 for product in products:
     # print(product['title'])
     # product['sale'] = True
-    if product ['name'] == 'bread':
+    if product['name'] == 'bread':
         # print(product['price'])
         # bread_price.append(product['price'])
         product['price'] = product['price'] * 1.1 - 1
