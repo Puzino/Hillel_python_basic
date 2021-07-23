@@ -38,13 +38,20 @@ my_dict_2 = {"Начинка": "Молоко",
              "Сметана": "Сахар",
              "Глазурь": "Масло"}
 
-# intersection_list = list(set(my_dict_1).intersection(my_dict_2))
-# print(intersection_list)
-#
-# difference_list = list(set(my_dict_1).difference(my_dict_2))
-# print(difference_list)
-#
-# my_dict = {keys: my_dict_1[keys] for keys in difference_list}
-# print(my_dict)
+intersection_list = list(set(my_dict_1).intersection(my_dict_2))
+print(intersection_list)
 
+difference_list = list(set(my_dict_1).difference(my_dict_2))
+print(difference_list)
 
+my_dict = {keys: my_dict_1[keys] for keys in difference_list}
+print(my_dict)
+
+list_unique_keys = list(set(my_dict_1).symmetric_difference(my_dict_2))
+
+new_dict_2 = {keys: (my_dict_1 | my_dict_2)[keys] for keys in list_unique_keys}
+
+new_dict_2.update({key: [my_dict_1[key], my_dict_2[key]] for key in intersection_list})
+
+print(list_unique_keys)
+print(new_dict_2)
