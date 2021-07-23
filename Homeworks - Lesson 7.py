@@ -4,15 +4,21 @@
 б) Напечатать самое длинное имя. Если длина имени совпадает - напечатать все имена.
 в) Посчитать среднее количество лет всех людей из списка.
 """
-persons = [{"name": "John", "age": 15},
-           {"name": "Jake", "age": 45},
-           {"name": "Jordan", "age": 15},
-           {"name": "Anton", "age": 25}]
-# for age in persons:
-#     if age['age'] >= age['age']:
-#         print(age)
+# persons = [{"name": "John", "age": 42},
+#            {"name": "Jake", "age": 45},
+#            {"name": "Jordan", "age": 12},
+#            {"name": "Anton", "age": 12}]
+# age_persons = [person['age'] for person in persons]
+# young_persons = [person['name'] for person in persons if person['age'] == min(age_persons)]
+# print('Имя самого молодого человека:', young_persons)
+#
+# name_persons = [len(person['name']) for person in persons]
+# max_name_persons = [person['name'] for person in persons if len(person['name']) == max(name_persons)]
+# print('Самое длинное имя:', max_name_persons)
+#
+# middle_age = sum(age_persons) // len(age_persons)
+# print('Средний возраст:', middle_age)
 
-print(max(list(persons.values())))
 """
 2) Даны два словаря my_dict_1 и my_dict_2.
 а) Создать список из ключей, которые есть в обоих словарях.
@@ -24,3 +30,20 @@ print(max(list(persons.values())))
 
 {1:1, 2:2}, {11:11, 2:22} ---> {1:1, 11:11, 2:[2, 22]}
 """
+my_dict_1 = {
+    'персона': 'человек',
+    'бежал': 'бежать в прошедшем времени',
+    'бежать': 'двигаться со скоростью',
+    'туфля': 'род обуви, закрывающей ногу не выше щиколотки',
+    'туфли': 'туфля во множественном числе'}
+
+my_dict_2 = {'марафон': 'гонка бегунов длиной около 26 миль',
+             'персона': 'человек',
+             'бежал': 'бежать в прошедшем времени',
+             'бежать': 'двигаться со скоростью'}
+set_my_dict_1 = set(my_dict_1)
+set_my_dict_2 = set(my_dict_2)
+intersections = set_my_dict_1.intersection(set_my_dict_2)
+new_list = []
+new_list.extend(intersections)
+print(new_list)
