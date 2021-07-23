@@ -11,7 +11,7 @@
 # age_persons = [person['age'] for person in persons]
 # young_persons = [person['name'] for person in persons if person['age'] == min(age_persons)]
 # print('Имя самого молодого человека:', young_persons)
-#
+
 # name_persons = [len(person['name']) for person in persons]
 # max_name_persons = [person['name'] for person in persons if len(person['name']) == max(name_persons)]
 # print('Самое длинное имя:', max_name_persons)
@@ -30,19 +30,21 @@
 
 {1:1, 2:2}, {11:11, 2:22} ---> {1:1, 11:11, 2:[2, 22]}
 """
-my_dict_1 = {'персона': 'человек',
-             'бежал': 'бежать в прошедшем времени',
-             'бежать': 'двигаться со скоростью',
-             'туфля': 'род обуви, закрывающей ногу не выше щиколотки',
-             'туфли': 'туфля во множественном числе'}
+my_dict_1 = {"Коржи": "Яйцо",
+             "Крем": "50гр.",
+             "Глазурь": "Масло"}
 
-my_dict_2 = {'марафон': 'гонка бегунов длиной около 26 миль',
-             'персона': 'человек',
-             'бежал': 'бежать в прошедшем времени',
-             'бежать': 'двигаться со скоростью'}
-set_my_dict_1 = set(my_dict_1)
-set_my_dict_2 = set(my_dict_2)
-intersections = set_my_dict_1.intersection(set_my_dict_2)
-new_list = []
-new_list.extend(intersections)
-print(new_list)
+my_dict_2 = {"Начинка": "Молоко",
+             "Сметана": "Сахар",
+             "Глазурь": "Масло"}
+
+# intersection_list = list(set(my_dict_1).intersection(my_dict_2))
+# print(intersection_list)
+#
+# difference_list = list(set(my_dict_1).difference(my_dict_2))
+# print(difference_list)
+#
+# my_dict = {keys: my_dict_1[keys] for keys in difference_list}
+# print(my_dict)
+
+
