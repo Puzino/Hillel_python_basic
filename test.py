@@ -22,14 +22,17 @@ print(e_mail)
 >>>miller.249@sgdyyur.com
 """
 
-def create_email(list_1, list_2, y):
-    return random.choice(list_1) + '.' + str(random.randint(100, 900)) + '@' + \
-           ''.join(random.choice(string.ascii_lowercase) for x in range(y)) + '.' + random.choice(list_2)
+
+def create_email(list_1, list_2):
+    return random.choice(list_1) + '.' + str(random.randint(100, 999)) + '@' + \
+           ''.join(
+               random.choice(string.ascii_lowercase) for count in range(0, random.randint(5, 7))) + '.' + random.choice(
+        list_2)
 
 
 names = ["king", "miller", "kean"]
 domains = ["net", "com", "ua"]
 
-e_mail = create_email(names, domains, 6)
+e_mail = create_email(names, domains)
 print('9)-----------------------------')
 print(e_mail)

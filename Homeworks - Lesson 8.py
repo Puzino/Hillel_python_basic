@@ -10,58 +10,62 @@ import string
 Если на четном - оставить без изменения.
 """
 
-# def func_list_1(list_1):
-#     return [symbol[::-1] if not index % 2 else symbol for index, symbol in enumerate(list_1)]
-#
-#
-# my_list = ['hello', 'beautiful', 'world', 'goodbye', 'boring', 'job']
-#
-# new_list = func_list_1(my_list)
-# print('1)-----------------------------')
-# print(new_list)
+
+def func_list_1(list_1):
+    return [symbol[::-1] if not index % 2 else symbol for index, symbol in enumerate(list_1)]
+
+
+my_list = ['hello', 'beautiful', 'world', 'goodbye', 'boring', 'job']
+
+new_list = func_list_1(my_list)
+print('1)-----------------------------')
+print(new_list)
 """
 2. Написать функцию которой передается один параметр - список строк my_list.
 Функция возвращает новый список в котором содержаться
 элементы из my_list у которых первый символ - буква "a".
 """
 
-# def func_list_2(list_2):
-#     return [symbol for symbol in my_list if symbol[0].find('a') >= 0]
-#
-#
-# my_list = ['add', 'all', 'good', 'defence', 'avvv']
-# new_list = func_list_2(my_list)
-# print('2)-----------------------------')
-# print(new_list)
+
+def func_list_2(list_2):
+    return [symbol for symbol in my_list if symbol[0].find('a') >= 0]
+
+
+my_list = ['add', 'all', 'good', 'defence', 'avvv']
+new_list = func_list_2(my_list)
+print('2)-----------------------------')
+print(new_list)
 """
 3. Написать функцию которой передается один параметр - список строк my_list.
 Функция возвращает новый список в котором содержаться
 элементы из my_list в которых есть символ - буква "a" на любом месте.
 """
 
+
 #
-# def func_list_3(list_3):
-#     return [value for index, value in enumerate(list_3) if 'a' in value]
-#
-#
-# my_list = ['asda', 'qwe', "asda", 'zxc', 'gfa', 'alll']
-# new_list = func_list_3(my_list)
-# print('3)-----------------------------')
-# print(new_list)
+def func_list_3(list_3):
+    return [value for index, value in enumerate(list_3) if 'a' in value]
+
+
+my_list = ['asda', 'qwe', "asda", 'zxc', 'gfa', 'alll']
+new_list = func_list_3(my_list)
+print('3)-----------------------------')
+print(new_list)
 """
 4. Написать функцию которой передается один параметр - список строк my_list в
 котором могут быть как строки (type str) так и целые числа (type int).
 Функция возвращает новый список в котором содержаться только строки из my_list.
 """
 
-# def func_list_4(list_4):
-#     return [symbol for index, symbol in enumerate(list_4) if isinstance(symbol, str)]
-#
-#
-# my_list = [1, 2, 3, "11", "22", 33]
-# new_list = func_list_4(my_list)
-# print('4)-----------------------------')
-# print(new_list)
+
+def func_list_4(list_4):
+    return [symbol for index, symbol in enumerate(list_4) if isinstance(symbol, str)]
+
+
+my_list = [1, 2, 3, "11", "22", 33]
+new_list = func_list_4(my_list)
+print('4)-----------------------------')
+print(new_list)
 
 """
 5. Написать функцию которой передается один параметр - строка my_str.
@@ -69,47 +73,50 @@ import string
 которые встречаются в строке только один раз.
 """
 
-# def func_list_5(list_5):
-#     return [number for number in my_set_str if my_str.count(number) == 1]
-#
-#
-# my_str = '122233334555567889'
-# my_set_str = set(my_str)
-# new_list = func_list_5(my_str)
-# print('5)-----------------------------')
-# print(new_list)
+
+def func_list_5(list_5):
+    return [number for number in my_set_str if my_str.count(number) == 1]
+
+
+my_str = '122233334555567889'
+my_set_str = set(my_str)
+new_list = func_list_5(my_str)
+print('5)-----------------------------')
+print(new_list)
 """
 6. Написать функцию которой передается два параметра - две строки.
 Функция возвращает список в который поместить те символы,
 которые есть в обеих строках хотя бы раз.
 """
 
-# def func_list_6(list_6):
-#     return list_6
-#
-#
-# my_str_1 = '123qwerv'
-# my_str_2 = '123456qweterrte'
-# intersection = set(my_str_1).intersection(my_str_2)
-# new_list = func_list_6(intersection)
-# print('6)-----------------------------')
-# print(new_list)
+
+def func_list_6(list_6):
+    return list_6
+
+
+my_str_1 = '123qwerv'
+my_str_2 = '123456qweterrte'
+intersection = set(my_str_1).intersection(my_str_2)
+new_list = func_list_6(intersection)
+print('6)-----------------------------')
+print(new_list)
 """
 7. Написать функцию которой передается два параметра - две строки.
 Функция возвращает список в который поместить те символы, которые есть в обеих строках,
 но в каждой только по одному разу.
 """
 
-# def func_list_7(list_7):
-#     return [number for number in union if my_str_1.count(number) == 1 and my_str_2.count(number) == 1]
-#
-#
-# my_str_1 = '1233334555567889'
-# my_str_2 = '133334555567889'
-# union = set(my_str_1).union(my_str_2)
-# new_list = func_list_7(union)
-# print('7)-----------------------------')
-# print(new_list)
+
+def func_list_7(list_7):
+    return [number for number in union if my_str_1.count(number) == 1 and my_str_2.count(number) == 1]
+
+
+my_str_1 = '1233334555567889'
+my_str_2 = '133334555567889'
+union = set(my_str_1).union(my_str_2)
+new_list = func_list_7(union)
+print('7)-----------------------------')
+print(new_list)
 """
 8. Даны списки names и domains (создать самостоятельно).
 Написать функцию для генерирования e-mail в формате:
@@ -126,14 +133,16 @@ print(e_mail)
 """
 
 
-def create_email(list_1, list_2, y):
-    return random.choice(list_1) + '.' + str(random.randint(100, 900)) + '@' + \
-           ''.join(random.choice(string.ascii_lowercase) for x in range(y)) + '.' + random.choice(list_2)
+def create_email(list_1, list_2):
+    return random.choice(list_1) + '.' + str(random.randint(100, 999)) + '@' + \
+           ''.join(
+               random.choice(string.ascii_lowercase) for count in range(0, random.randint(5, 7))) + '.' + random.choice(
+        list_2)
 
 
 names = ["king", "miller", "kean"]
 domains = ["net", "com", "ua"]
 
-e_mail = create_email(names, domains, 6)
-print('9)-----------------------------')
+e_mail = create_email(names, domains)
+print('8)-----------------------------')
 print(e_mail)
