@@ -1,3 +1,6 @@
+import random
+import string
+
 """
 1. Написать функцию которой передается один параметр - список строк my_list.
 Функция возвращает новый список в котором содержаться
@@ -11,7 +14,7 @@
 #     return [symbol[::-1] if not index % 2 else symbol for index, symbol in enumerate(list_1)]
 #
 #
-# my_list = ['hello', 'beautifull', 'world', 'goodbye', 'boring', 'job']
+# my_list = ['hello', 'beautiful', 'world', 'goodbye', 'boring', 'job']
 #
 # new_list = func_list_1(my_list)
 # print('1)-----------------------------')
@@ -123,13 +126,14 @@ print(e_mail)
 """
 
 
-def create_email(list_1, list_2):
-    return
+def create_email(list_1, list_2, y):
+    return random.choice(list_1) + '.' + str(random.randint(100, 900)) + '@' + \
+           ''.join(random.choice(string.ascii_lowercase) for x in range(y)) + '.' + random.choice(list_2)
 
 
 names = ["king", "miller", "kean"]
 domains = ["net", "com", "ua"]
 
-e_mail = create_email(domains, names)
-print('8)-----------------------------')
+e_mail = create_email(names, domains, 6)
+print('9)-----------------------------')
 print(e_mail)

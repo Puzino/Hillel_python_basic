@@ -1,16 +1,35 @@
-my_dict_1 = {"Коржи": "Яйцо",
-             "Крем": "50гр.",
-             "Глазурь": "Масло"}
+import random
+import string
 
-my_dict_2 = {"Начинка": "Молоко",
-             "Сметана": "Сахар",
-             "Глазурь": "Масло"}
 
-# intersection_list = list(set(my_dict_1).intersection(my_dict_2))
-# print(intersection_list)
-#
-difference_list = list(set(my_dict_1).difference(my_dict_2))
-print(difference_list)
+def random_char(y):
+    return ''.join(random.choice(string.ascii_letters) for x in range(y))
 
-my_dict = {keys: my_dict_1[keys] for keys in difference_list}
-print(my_dict)
+
+print(random_char(7) + "@gmail.com")
+"""
+8. Даны списки names и domains (создать самостоятельно).
+Написать функцию для генерирования e-mail в формате:
+фамилия.число_от_100_до_999@строка_букв_длинной_от_5_до_7_символов.домен
+фамилию и домен брать случайным образом из заданных списков переданных в функцию в виде параметров.
+Строку и число генерировать случайным образом.
+
+Пример использования функции:
+names = ["king", "miller", "kean"]
+domains = ["net", "com", "ua"]
+e_mail = create_email(domains, names)
+print(e_mail)
+>>>miller.249@sgdyyur.com
+"""
+
+def create_email(list_1, list_2, y):
+    return random.choice(list_1) + '.' + str(random.randint(100, 900)) + '@' + \
+           ''.join(random.choice(string.ascii_lowercase) for x in range(y)) + '.' + random.choice(list_2)
+
+
+names = ["king", "miller", "kean"]
+domains = ["net", "com", "ua"]
+
+e_mail = create_email(names, domains, 6)
+print('9)-----------------------------')
+print(e_mail)
