@@ -42,7 +42,6 @@ print(new_list)
 """
 
 
-#
 def func_list_3(list_3):
     return [value for index, value in enumerate(list_3) if 'a' in value]
 
