@@ -74,11 +74,10 @@ print(new_list)
 
 
 def func_list_5(list_5):
-    return [number for number in my_set_str if my_str.count(number) == 1]
+    return [number for number in set(my_str) if my_str.count(number) == 1]
 
 
 my_str = '122233334555567889'
-my_set_str = set(my_str)
 new_list = func_list_5(my_str)
 print('5)-----------------------------')
 print(new_list)
@@ -89,14 +88,13 @@ print(new_list)
 """
 
 
-def func_list_6(list_6):
-    return list_6
+def func_list_6(my_str_1, my_str_2):
+    return list(set(my_str_1).intersection(my_str_2))
 
 
-my_str_1 = '123qwerv'
+my_str_1 = '1234qwerv'
 my_str_2 = '123456qweterrte'
-intersection = set(my_str_1).intersection(my_str_2)
-new_list = func_list_6(intersection)
+new_list = func_list_6(my_str_1, my_str_2)
 print('6)-----------------------------')
 print(new_list)
 """
@@ -106,14 +104,13 @@ print(new_list)
 """
 
 
-def func_list_7(list_7):
-    return [number for number in union if my_str_1.count(number) == 1 and my_str_2.count(number) == 1]
+def func_list_7(my_str_1, my_str_2):
+    return [number for number in set(my_str_1).union(my_str_2) if my_str_1.count(number) == 1 and my_str_2.count(number) == 1]
 
 
 my_str_1 = '1233334555567889'
 my_str_2 = '133334555567889'
-union = set(my_str_1).union(my_str_2)
-new_list = func_list_7(union)
+new_list = func_list_7(my_str_1, my_str_2)
 print('7)-----------------------------')
 print(new_list)
 """
