@@ -1,8 +1,8 @@
 import os
 
 
-# current_dir = os.getcwd()
-# print(current_dir)
+current_dir = os.getcwd()
+print(current_dir)
 # tmp_path = os.path.join(current_dir, "Homeworks", "tmp", "test_2")
 # print(tmp_path)
 
