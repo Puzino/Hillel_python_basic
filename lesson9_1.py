@@ -7,9 +7,9 @@
 # with open("lesson10_new.py", "w") as py_file:
 #     py_file.writelines(data)
 
-with open("Hillel/names.txt", "r") as txt_file:
+with open("names.txt", "r") as txt_file:
     data = txt_file.readlines()
 
 for line in data:
-    if len(line) > 32:
+    if line:
         print(line.split("\t"))

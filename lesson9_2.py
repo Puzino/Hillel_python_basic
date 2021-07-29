@@ -30,6 +30,6 @@ def get_tanos_click(path):
         os.remove(os.path.join(path, file))
 
 
-# create_dir("alphabet")
+create_dir("alphabet")
 create_files_in_dir("alphabet")
 get_tanos_click("alphabet")
