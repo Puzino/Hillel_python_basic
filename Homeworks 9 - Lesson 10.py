@@ -52,10 +52,17 @@ import re
 не сделалллл!!!!!!!!!!!!
 """
 
+
 def create_authors(path):
     with open(path, 'r') as txt_file:
         path = txt_file.readlines()
-    return {"date_original": line.split(' - ')[0] for line in path}
+
+    # return [line.split(' - ')[0] for line in path]
+    for word in path:
+        word = re.split('[-\\n]', word)[0]
+        # word = word.split(' - ')[0]
+    # return [re.split('[-\\n]', word)[0] for word in path]
+    return {'123:',word},{'1235', word}
 
 
 new_list = create_authors("authors.txt")
