@@ -1,46 +1,42 @@
 import os
 import re
-
-# Все пункты сделать как отдельные функции(можно создавать дополнительные вспомагательные функции)
-"""
-1. Написать функцию, которая получает в виде параметра имя файла названия интернет доменов (domains.txt)
-и возвращает их в виде списка строк (названия возвращать без точки).
-"""
+# Task №1
 
 
-def create_domains(domains):
-    with open(domains, "r") as txt_file:
-        domain = txt_file.readlines()
-    return [re.sub('[.\\n]', '', word) for word in domain]
+def get_domains(file_name: str) -> list:
+    with open(file_name, 'r') as txt_file:
+        data = txt_file.read()
+        data = data.replace('.', '')
+        domains_list = data.split('\n')
+    return domains_list
 
 
-new_list = create_domains('domains.txt')
-print(f'Domains: {new_list}')
-
-"""
-2. Написать функцию, которая получает в виде параметра имя файла (names.txt)
-и возвращает список всех фамилий из него.
-Каждая строка файла содержит номер, фамилию, страну, некоторое число (таблица взята с википедии).
-Разделитель - символ табуляции "\t"
-"""
+domains = get_domains('domains.txt')
+print(f'Domains list: {domains}')
+print('------------------------------------------------------------------------------------------------------------')
+# Task №2
 
 
-def create_name(path):
-    with open(path, 'r') as txt_file:
-        path = txt_file.readlines()
-    return [line.split()[1] for line in path]
+def get_last_names(file_name: str) -> list:
+    last_names_list = []
+    file_lines_list = get_file_lines(file_name)
+    for line in file_lines_list:
+        line = line.split('\t')
+        last_names_list.append(line[1])
+    return last_names_list
 
 
-new_list = create_name("names.txt")
-print(f'Last names: {new_list}')
+def get_file_lines(file_name: str):
+    with open(file_name, 'r') as txt_file:
+        data = txt_file.read()
+        lines_list = data.split('\n')
+    return lines_list
 
-"""
-3. Написать функцию, которая получает в виде параметра имя файла (authors.txt) и возвращает список
-словарей вида {"date_original": date_original, "date_modified": date_modified}
-в которых date_original - это дата из строки (если есть),
-а date_modified - эта же дата, представленная в формате "dd/mm/yyyy" (d-день, m-месяц, y-год)
-Например [{"date_original": "8th February 1828", "date_modified": 08/02/1828},  ...]
-"""
+
+last_names = get_last_names('names.txt')
+print(f'Last names list: {last_names}')
+print('------------------------------------------------------------------------------------------------------------')
+# Task №3
 
 month = {'January': '01',
          'February': '02',
@@ -58,7 +54,7 @@ month = {'January': '01',
 
 def get_original_dates(file_name: str) -> list:
     dates_original_list = []
-    file_lines_list = create_name(file_name)
+    file_lines_list = get_file_lines(file_name)
     for line in file_lines_list:
         line = line.split(' - ')
         for item in line:
@@ -72,7 +68,7 @@ def get_date_modified(file_name: str):
     dates_modified_list = []
     for date in dates_original_list:
         date = date.split(' ')
-        day_of_the_month = date[1]
+        day_of_the_month = date[0]
         day_of_the_month = day_of_the_month.rstrip('ndrsth')
         if int(day_of_the_month) < 10:
             modified_day_of_the_month = f'0{day_of_the_month}'
