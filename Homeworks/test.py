@@ -22,7 +22,7 @@ def get_last_names(file_name: str) -> list:
     file_lines_list = get_file_lines(file_name)
     for line in file_lines_list:
         line = line.split('\t')
-        last_names_list.append(line[0])
+        last_names_list.append(line[1])
     return last_names_list
 
 
