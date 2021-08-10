@@ -23,21 +23,30 @@ def get_raw_quote(lang="ru"):
     return response.json()
 
 
-def get_quote(raw_quote):
-    return raw_quote['quoteText']
+def get_text(raw_quote):
+    text = []
+    if len(raw_quote['quoteAuthor']) > 0:
+        text.append(raw_quote['quoteText'])
+    return text
 
 
 def get_author(raw_quote):
     return raw_quote['quoteAuthor']
 
 
+def get_link(raw_quote):
+    return raw_quote['quoteLink']
+
+
+
 def get_int(key):
     for request_number in range(key):
         raw_quote = get_raw_quote()
-        quote = get_quote(raw_quote)
+        quote = get_text(raw_quote)
         new_get_author = get_author(raw_quote)
+        link = get_link(raw_quote)
 
-        print([f'{quote} @{new_get_author}'])
+        print(f'{quote} @{new_get_author} URL:{link}')
 
 
 new_get = get_int(5)
