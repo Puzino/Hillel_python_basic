@@ -14,9 +14,9 @@ import random
 import csv
 
 
-def get_raw_quote(how_quotes):
+def get_raw_quote(quotes):
     text_list = []
-    while len(text_list) < how_quotes:
+    while len(text_list) < quotes:
         url = 'http://api.forismatic.com/api/1.0/'
         params = {'method': 'getQuote',
                   'format': 'json',
@@ -37,6 +37,6 @@ def write(file_csv, data):
         writer.writerows(sorted(data, key=lambda x: x[0]))
 
 
-file_quotes_csv = 'quotes.csv'
+file_quotes_csv = 'list.csv'
 list_author_quote_url = get_raw_quote(5)
 write(file_quotes_csv, list_author_quote_url)
