@@ -11,43 +11,32 @@ Author, Quote, URL.
 """
 import requests
 import random
+import csv
 
 
-def get_raw_quote(lang="ru"):
-    url = "http://api.forismatic.com/api/1.0/"
-    params = {"method": "getQuote",
-              "format": "json",
-              "lang": lang,
-              "key": random.randint(1, 999999)}
-    response = requests.get(url, params=params)
-    return response.json()
+def get_raw_quote(how_quotes):
+    text_list = []
+    while len(text_list) < how_quotes:
+        url = 'http://api.forismatic.com/api/1.0/'
+        params = {'method': 'getQuote',
+                  'format': 'json',
+                  'lang': 'ru',
+                  'key': random.randint(1, 999999)}
+        responce = requests.get(url, params=params)
+        quote_json = responce.json()
+        if not quote_json['quoteAuthor'] == '':
+            list_quote = [quote_json['quoteAuthor'], quote_json['quoteText'], quote_json['quoteLink']]
+            text_list.append(list_quote)
+    return text_list
 
 
-def get_text(raw_quote):
-    text = []
-    if len(raw_quote['quoteAuthor']) > 0:
-        text.append(raw_quote['quoteText'])
-    return text
+def write(file_csv, data):
+    with open(file_csv, 'w') as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow(['Author', 'Quote', 'URL'])
+        writer.writerows(sorted(data, key=lambda x: x[0]))
 
 
-def get_author(raw_quote):
-    return raw_quote['quoteAuthor']
-
-
-def get_link(raw_quote):
-    return raw_quote['quoteLink']
-
-
-
-def get_int(key):
-    for request_number in range(key):
-        raw_quote = get_raw_quote()
-        quote = get_text(raw_quote)
-        new_get_author = get_author(raw_quote)
-        link = get_link(raw_quote)
-
-        print(f'{quote} @{new_get_author} URL:{link}')
-
-
-new_get = get_int(5)
-print(new_get)
+file_quotes_csv = 'quotes.csv'
+list_author_quote_url = get_raw_quote(5)
+write(file_quotes_csv, list_author_quote_url)
